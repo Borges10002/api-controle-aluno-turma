@@ -1,0 +1,33 @@
+criar o projeto npm init -y
+
+npm para roda o node
+npm i express
+npm i install body-parser
+
+biblioteca para fica escutando as alteracoes
+npm install --save-dev nodemon
+
+banco de dados mysql
+npm i mysql2
+
+https://sequelize.org/docs/v6/other-topics/migrations/
+>npm i sequelize sequelize-cli path
+
+criar as pasta
+npx sequelize-cli init
+
+
+criar a tabela 
+npx sequelize-cli model:create --name Pessoas --attributes nome:string,ativo:boolean,email:string,role:string
+
+migrate
+npx sequelize-cli db:migrate          
+
+
+sequelize-cli seed:generate --name demo-pessoa
+
+fazer insert 
+npx sequelize-cli db:seed:all
+
+roda a migrate para criar no banco
+npx sequelize-cli db:migrate
