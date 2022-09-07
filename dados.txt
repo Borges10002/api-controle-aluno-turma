@@ -31,3 +31,8 @@ npx sequelize-cli db:seed:all
 
 roda a migrate para criar no banco
 npx sequelize-cli db:migrate
+
+verifica a versao das dependencia
+npm outdated
+atualiza as dependencia
+npm update
